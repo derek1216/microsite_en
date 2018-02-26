@@ -1,0 +1,262 @@
+
+
+
+/* ie */
+.row-fluid div.imgLeft{
+    *float: left;
+    *width: 55%;
+}
+.row-fluid div.wordRight{
+    *float: right;
+    *width: 34%;
+}
+
+
+#section_1 .icon li{
+    display:inline;
+}
+
+/* ie end */
+
+
+
+
+/* 要扣掉上方 ATEN 選單高度-- 不可刪除 */
+	#section_1 .bg{
+	background-position: 50% -10px;
+	background-repeat: repeat-x;
+    background-attachment: fixed;
+    }
+	
+	
+	
+
+	
+
+
+/* 超級大螢幕 */
+@Media (min-width: 1921px) and (max-width: 2560px) { 
+/*
+    .row-fluid div.imgLeft{
+        float: left;
+        width: 55%;
+    }
+    .row-fluid div.wordRight{
+        float: right;
+        width: 40%;
+    }
+	 */
+	
+	#section_1 div.section_block{
+    margin:140px 0 120px 0
+    }
+	
+	
+	#section_1 .bg{
+	background-position: 50% -10px;
+    }
+	
+	
+	#section_1 div.section_block .features_banner {
+	margin-top:-110px;
+    }
+	
+	
+	#section_1 div.section_block .icon {
+	margin-top:-30px;
+    }
+	
+	
+	
+	#section_2 div.section_block{
+	margin: 190px 0 220px 0;
+    }
+	
+	
+	
+	#section_4 div.section_block{
+	margin: 160px 0 120px 0;
+    }
+	
+		
+	
+	
+
+	
+}
+
+
+
+
+
+
+
+/* 大螢幕 */
+@Media (min-width: 1200px) and (max-width: 1920px) { 
+  /*   .row-fluid div.imgLeft{
+        float: left;
+        width: 55%;
+    }
+    .row-fluid div.wordRight{
+        float: right;
+        width: 34%;
+    }
+	 */
+	
+	#section_1 div.section_block{
+	margin: 120px 0 70px 0;
+    }
+	
+	
+	#section_1 .bg{
+	background-position: 50% -110px;
+    }
+	
+	
+	#section_1 div.section_block .features_banner {
+	margin-top:-200px;
+    }
+	
+	
+	#section_1 div.section_block .color_block {
+	margin-top:-125px;
+    }
+	
+	
+	#section_1 div.section_block .icon {
+	margin-top:-75px;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/* 一般pc小螢幕 */
+@Media (min-width: 980px) and (max-width: 1199px) { 
+    .row-fluid div.imgLeft{
+        float: left;
+        width: 55%;
+    }
+    .row-fluid div.wordRight{
+        float: right;
+        width: 40%;
+    }
+	
+	
+	#section_1 .bg{
+	background-position: 50% -160px;
+    }	
+
+}
+
+
+
+
+
+
+
+/* 平板電腦、橫向手機和一般桌機解析度 */
+@Media (min-width: 768px) and (max-width: 979px) { 
+    .row-fluid div.imgLeft{
+        float: left;
+        width:100%;
+    }
+	
+
+    .row-fluid div.wordRight{
+        float: right;
+        width:100%;
+        margin-bottom:50px;
+    }
+	
+	
+	#section_1 .bg{
+	background-position: 50% -160px;
+    }	
+
+}
+
+
+
+
+
+
+
+/* 橫向智慧手機到竪立平板電腦解析度 */
+@Media (max-width: 767px) { 
+    .row-fluid div.imgLeft{
+        float: left;
+        width:100%;
+    }
+    .row-fluid div.wordRight{
+        float: right;
+        width:100%;
+        margin-bottom:40px;
+    }
+	
+	
+	#section_1 .bg{
+	background-position: 50% -160px;
+    }	
+	
+ 
+}
+
+
+
+
+
+/* iPhone 6 & 6 plus > 4.7吋--手機及其他更小解析度 */
+@Media (min-width: 373px) and (max-width: 414px) { 
+
+    .row-fluid div.imgLeft{
+        float: left;
+        width:100%;
+    }
+    .row-fluid div.wordRight{
+        float: right;
+        width:100%;
+        margin-bottom:40px;
+    }
+	
+	
+	#section_1 .bg{
+	background-position: 50% -160px;
+    }
+
+}
+
+
+
+
+
+/* 橫向智慧手機及其他更小解析度 */
+@Media (max-width: 480px) { 
+    .row-fluid div.imgLeft{
+        float: left;
+        width:100%;
+    }
+
+    .row-fluid div.wordRight{
+        float: right;
+        width:100%;
+        margin-bottom:10px;
+    }
+	
+	
+	#section_1 .bg{
+	background-position: 50% -160px;
+    }
+
+
+
+}
+

@@ -1,0 +1,533 @@
+/**nav*/
+
+div#tmenu {
+    font-size:11pt; /* 14px; */
+    font-weight:300;
+    background-color: #fff;
+    z-index: 9999;
+    float: right;
+    margin-top: 4px;
+}
+
+div#tmenu li a {
+    color: #000;
+    text-decoration: none;
+    margin-top: 4px;
+    transition: all 0.3s ease-in-out 0s;/*底圖顏色漸變消失*/
+}
+
+div#tmenu li a:hover {
+    color: #2292d3;
+    transition: all 0.5s linear 0s; /*底圖顏色漸變出現*/
+}
+
+div#pmenu_box {
+    background: -moz-linear-gradient(center top , #f2f3f3 0%, #ffffff 30%, #ffffff 100%) repeat scroll 0 0 #fff;
+	background: -webkit-linear-gradient(top,  rgba(255, 255, 255, 1.0) 0%, rgba(255, 255, 255, 1.0) 30%, rgba(255, 255, 255, 1.0) 100%, rgba(255, 255, 255, 1.0) 100%); /* Chrome10+,Safari5.1+ */
+    box-shadow: 0 1px 0 0 #ffffff inset;
+    margin: 0 auto;
+    text-indent: 0;
+    width: 100%;
+}
+
+div#pmenu {
+    color: #656a6d;
+    float: right;
+    font-size: 11pt;
+    font-weight:300;
+    margin: 10px 0 0;
+    overflow: hidden;
+    text-shadow: 1px 1px 0 #ffffff;
+    margin: 0px\9;
+    padding: 10px 0 0\9;
+	/* background-color:#fff; */
+}
+
+@media (max-width: 979px) {
+    div#pmenu {
+        float: none;
+    }
+    div#tmenu {
+        float: none;
+    }
+}
+
+div#pmenu ul {
+    list-style-type: none;
+}
+
+div#pmenu li {
+    color: #fff;
+    text-align: left;
+}
+
+/* Menu 移動條狀 */
+div#pmenu li.highline{
+    background-color: #00b5dd;
+    height: 4px;
+    position: absolute;
+}
+
+div#pmenu li a {
+    color: #656a6d;
+    text-decoration: none;
+    font-size: 10.9pt; /* 13px; */
+    font-size: 13px \9; /*     "*" 是針對 IE 8 的位置調整     */
+    font-weight:300;
+    text-shadow:1px 1px 0px #ffffff;
+
+}
+
+div#pmenu li.actived a {
+    color: #000;
+    transition: all 0.3s ease-in-out 0s;/*底圖顏色漸變消失*/
+}
+
+div#pmenu li a:hover {
+    color: #000;
+    transition: all 0.5s linear 0s; /*底圖顏色漸變出現*/
+}
+
+div#pmenu_content {
+    margin: 0 auto;
+}
+
+div#pmenu_block {
+    background-color: #fff;
+    box-shadow: 0 2px 3px 0 rgba(20%, 30%, 40%, 0.2);
+    margin: 0 auto;
+    opacity: 0.99;
+    width: 100%;
+    position: absolute;
+    z-index: 9999;
+    border-bottom:1px solid #c3c5c6
+}
+
+div#pmenu_block.fixedTop{
+    position: fixed;
+    top:0px;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.95);
+		background: -webkit-linear-gradient(top,  rgba(255, 255, 255, 1.0) 0%, rgba(255, 255, 255, 1.0) 30%, rgba(255, 255, 255, 1.0) 100%, rgba(255, 255, 255, 1.0) 100%); /* Chrome10+,Safari5.1+ */
+}
+
+
+
+div#pmenu_block.fixedTop #pmenu_box{
+border-top: 4px solid #165086;
+border-top: 4px solid #165086\9;
+}
+
+div#pmenu_block #pmenu_box{
+border-top: 0px solid #165086;
+}
+
+
+
+div#pmenu_block.fixedTop div{
+    background: transparent;
+}
+
+
+
+/* Logo */
+
+
+.aten_logo{
+	background-image:url(../images/logo.png);
+	background-repeat:no-repeat;
+	width:96px; 
+	height:37px;
+	background-position: 50% 40%;
+}
+
+
+	.navbar .brand, .navbar .brand:link, .navbar .brand:active, .navbar .brand:visited {
+    opacity:1.0;
+    filter:alpha(opacity=100); /* 針對 IE8 以及更早的版本*/
+	transition: all 0.3s ease-in-out 0s;/*底圖顏色漸變消失*/
+}
+	
+	
+	.navbar .brand:hover {
+    opacity:0.75;
+    filter:alpha(opacity=75); /* 針對 IE8 以及更早的版本*/
+	transition: all 0.5s linear 0s; /*底圖顏色漸變出現*/ 
+}
+
+
+.navbar .brand{
+    padding-left: 20px;
+    *line-height: 25px;
+	padding-top: 12px;
+}
+
+
+
+
+
+
+
+/* 品名 -- Model name */
+div#pmenu_block .navbar span.brandname{
+    padding-left: 27px;
+    font-size: 19.5pt;
+    font-style: normal;
+    font-weight: 300;
+    font-variant: normal;
+    color: #000;
+    *line-height: 25px;
+}
+/* chrome 微調 
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+.navbar ,.brand ,.navbar span.brandname{font-family: "Source Sans Pro", "Segoe UI Light",Arial; font-weight: 300;}
+}
+*/
+.navbar a.brand, .navbar span.brandname a:link {color:#000; text-decoration: none; transition: all 0.3s ease-in-out 0s;/*底圖顏色漸變消失*/}
+.navbar a.brand, .navbar span.brandname a:active {color:#000; text-decoration: none; transition: all 0.3s ease-in-out 0s;/*底圖顏色漸變消失*/} 
+.navbar a.brand, .navbar span.brandname a:visited {color:#000; text-decoration: none; transition: all 0.3s ease-in-out 0s;/*底圖顏色漸變消失*/} 
+.navbar a.brand, .navbar span.brandname a:hover {color: #2292d3; text-decoration: none; transition: all 0.5s linear 0s; /*底圖顏色漸變出現*/}
+
+.navbar button.btn-navbar{
+    margin-right: 15px;
+}
+
+#nevSpy div#pmenu_box {
+    background:rgba(11, 12, 12, 0.8);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#800b0c0c,endColorstr=#800b0c0c,enabled=true,gradientType='1')\9;
+    box-shadow: 0 1px 0 0 #ffffff inset;
+    margin: 0 auto;
+    text-indent: 0;
+    width: 100%;
+}
+
+#nevSpy .highLineTitle{
+    text-align: center;
+    line-height:81px; /* 字的位置 */
+    height: 75px;
+    margin-left:0px;
+    padding-left:19px;
+}
+
+#nevSpy .highLineTitle:not(.highLineActive):hover {background-color:rgba(255, 255, 255, 0.2) ;
+                                                   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#20ffffff,endColorstr=#20ffffff,enabled=true,gradientType='1')\9; transition: all 0.3s linear 0s; /*底圖顏色漸變出現*/}	
+
+
+
+#nevSpy .highLineActive{
+    background-color:rgba(143, 210, 0, 0.7) ;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#708fd200,endColorstr=#708fd200,enabled=true,gradientType='1')\9;
+    text-decoration:none;
+    transition: all 0.5s linear 0s; /*底圖顏色漸變出現*/
+}	
+
+
+#nevSpy .highLineActive:nth-child(1){
+    background-color:rgba(0, 156, 198, 0.7) ;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#70009cc6,endColorstr=#70009cc6,enabled=true,gradientType='1')\9;
+    text-decoration:none;
+    transition: all 0.5s linear 0s; /*底圖顏色漸變出現*/
+}
+
+#nevSpy .highLineActive:nth-child(2){
+    background-color:rgba(143, 210, 0, 0.7) ;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#708fd200,endColorstr=#708fd200,enabled=true,gradientType='1')\9;
+    text-decoration:none;
+    transition: all 0.5s linear 0s; /*底圖顏色漸變出現*/
+}
+
+
+#nevSpy .highLineActive:nth-child(3){
+    background-color:rgba(7, 179, 151, 0.7) ;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7007b397,endColorstr=#7007b397,enabled=true,gradientType='1')\9;
+    text-decoration:none;
+    transition: all 0.5s linear 0s; /*底圖顏色漸變出現*/
+}
+
+/*end head*/
+
+
+
+
+
+
+
+
+
+
+
+/*定義最上層nav*/
+.nav-pc li{
+    border-bottom: 1px dotted rgba(0, 0, 255, 0.2);
+    color: rgba(0, 0, 0, 0.8);
+    /* black
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.6);
+    */
+    display: block;
+    padding-left: 0;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-pc li:last-child {
+    border: medium none;
+}
+
+.nav-pc li a{
+    /* black
+    color: rgba(255, 255, 255, 0.6);
+    */
+    color: rgba(0, 0, 0, 0.8);
+    display: block;
+    padding: 20px 35px 20px 10px;
+	text-decoration:none;
+    transition: all 0.3s ease-in-out 0s;/*底圖顏色漸變消失*/
+}
+
+
+.nav-pc li a:hover{
+    /* black
+    color: rgba(255, 255, 255, 0.6);
+    */
+    color: rgba(34, 146, 211, 1.0);
+    display: block;
+    padding: 20px 30px 20px 15px;
+	text-decoration:none;
+    transition: all 0.3s linear 0s; /*底圖顏色漸變出現*/
+}
+
+
+
+.nav-pcblock{
+    position: absolute;
+    z-index: 9999;
+    /* black
+    background-color: #242830;
+    */
+    background-color: #fefefe;
+    margin-top: 75px;
+    display: block;
+    width:100%;
+}
+
+.nav-pcblock .arrow{
+    float:right;
+}
+.nav-pcblock.actived{
+    height:370px;
+    border-bottom: 1px solid #c3c5c6;
+    box-shadow: 0 2px 3px 0 rgba(20%, 30%, 40%, 0.2);
+}
+
+.nav-pcblock{
+    height:0px;
+    transition: all 300ms ease-in-out 0s; 
+    overflow: hidden; 
+    display: block; 
+}
+
+
+/* 縮放彈跳 Menu--三條線 */
+span.iconOpen, span.iconOpen:before, span.iconOpen:after { cursor: pointer; border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; -o-border-radius: 1px; height: 5px; width: 35px; background-color: rgba(0, 0, 0, 0.7); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#69000000,endColorstr=#69000000,enabled=true,gradientType='1')\9; position: absolute; display: block; content: ''; }
+
+
+
+/* 縮放彈跳 Menu--hover */
+span.iconOpen:hover, span.iconOpen:hover:before, span.iconOpen:hover:after { cursor: pointer; border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; -o-border-radius: 1px; height: 5px; width: 35px; background-color: rgba(0, 0, 0, 1.0); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000,enabled=true,gradientType='1')\9; position: absolute; display: block; content: ''; transition: all 0.5s linear 0s; }
+span.iconClose:hover { background-color: transparent; }
+
+
+span.iconOpen:before { top: -10px; }
+span.iconOpen:after { bottom: -10px; }
+span.iconOpen, span.iconOpen:before, span.iconOpen:after { transition: all 400ms ease-in-out; -webkit-transition: all 400ms ease-in-out; -moz-transition: all 400ms ease-in-out; -o-transition: all 400ms ease-in-out; }
+
+span.iconClose { background-color: transparent; }
+span.iconClose:before, span.iconClose:after { top: 0; }
+span.iconClose:before { transform: rotate(45deg); -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); }
+span.iconClose:after { transform: translateY(-10px) rotate(-45deg); -webkit-transform: translateY(-10px) rotate(-45deg); -ms-transform: translateY(-10px) rotate(-45deg); top: 10px; }
+/*定義最上層nav end*/
+
+
+div#header {
+    border-bottom: 1px solid #c6c7c8;
+    color: #fff;
+    height: 81px;
+    width: 100%;
+    z-index: 9999;
+    background-color: #fff;
+    position: relative;
+}
+
+div#header_blue {
+    background: url("../images/topline_bg1.gif") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    height: 6px;
+    width: 100%;
+}
+
+div#header_blue.FixedTop {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+div#header_allblue {
+    height: 6px;
+    margin: 0 auto;
+}
+
+div#header_dblue {
+    background: url("../images/topline_left.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 6px;
+    width: 70%;
+}
+
+div#header_lblue {
+    background: url("../images/topline_right.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: right;
+    height: 6px;
+    width: 25%;
+}
+
+div#header_content {
+    margin: 0 auto;
+    padding: 9px 0 0;
+}
+
+#content .carousel-indicators .active{
+    width:30px;
+}
+
+.sectionNav{
+    z-index:9999;
+    position: fixed;
+    right:0;
+    margin-right: 20px;
+    top:50%;
+}
+
+.sectionNav li{
+    float: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.sectionNav li.active{
+    height: 20px;
+}
+
+/*end head*/
+
+
+
+
+
+
+
+
+
+
+
+/* 手機版 Menu -- 蓋掉 Bootstrap 設定 */
+
+
+/* 按鈕 */
+ .navbar #pmenu_content button.btn-navbar, .navbar #header_content button.btn-navbar{
+
+    float: right;
+    padding:0px 1px;
+    margin-right: 15px;
+    margin-left: 5px;
+    margin-top: 8px;
+    color: #ffffff;
+
+    text-shadow:1px 1px 0px #ffffff;
+    /* text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); */
+
+    background-color: #fff;
+    *background-color: #fff;
+
+    border-color: #c4c6c7 #c4c6c7 #c4c6c7;
+
+    /** 漸層隱藏
+    background-image: -moz-linear-gradient(top, #f2f2f2, #e5e5e5);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#e5e5e5));
+    background-image: -webkit-linear-gradient(top, #f2f2f2, #e5e5e5);
+    background-image: -o-linear-gradient(top, #f2f2f2, #e5e5e5);
+    background-image: linear-gradient(to bottom, #f2f2f2, #e5e5e5);
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2f2f2', endColorstr='#ffe5e5e5',  GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    */
+    /** button 陰影隱藏 
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
+    background-repeat: repeat-x;
+    */
+}
+
+
+/* 按鈕滑過狀態 */
+.navbar #pmenu_content .navbar .btn-navbar:hover,
+.navbar #pmenu_content .navbar .btn-navbar:focus,
+.navbar #pmenu_content .navbar .btn-navbar:active,
+.navbar #pmenu_content .navbar .btn-navbar.active,
+.navbar #pmenu_content .navbar .btn-navbar.disabled,
+.navbar #pmenu_content .navbar .btn-navbar[disabled] {
+    color: #666;
+    background-color: #fff;
+    *background-color: #fff;
+    border-color: #e5e5e5 #e5e5e5 #bfbfbf;
+}
+
+.navbar #pmenu_content .navbar .btn-navbar:active,
+.navbar #pmenu_content .navbar .btn-navbar.active {
+    background-color: #cccccc \9;
+}
+
+
+/* end */
+
+
+
+
+/* 橫向智慧手機及其他更小解析度 */
+@Media (max-width: 979px) {
+
+
+
+ /* Logo--位置 */	
+	.navbar .brand {
+    margin: 0 0 0 -5px;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+
+
+	div#pmenu_block {
+   z-index: 9998;
+
+}
+
+
+/* 品名 -- Model name */
+div#pmenu_block .navbar span.brandname{
+    font-size: 15pt;
+}
+/* chrome 微調 */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+    div#pmenu_block .navbar span.brandname {font-size: 14pt; }
+}
+
+
+div#pmenu_block .navbar .brand {
+    padding-top: 15px;
+}
+
+
+
+}

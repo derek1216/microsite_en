@@ -1,0 +1,516 @@
+/* ie */
+.row-fluid div.imgLeft{
+    *float: left;
+    *width: 55%;
+}
+.row-fluid div.wordRight{
+    *float: right;
+    *width: 34%;
+}
+
+
+
+
+/* 大螢幕 */
+@Media (min-width: 1200px) { 
+    .row-fluid div.imgLeft{
+        float: left;
+        width: 55%;
+    }
+    .row-fluid div.wordRight{
+        float: right;
+        width: 34%;
+    }
+
+
+
+
+
+    #section_1 .section_block{
+        text-align: center;
+		margin-top:120px;
+		margin-bottom:100px;
+    }
+
+    #section_1 .edgeblock{
+        height: 850px;
+        left: -470px;
+        position: relative;
+        top: -200px;
+    }
+
+    #section_2 .section_block{
+        text-align: center;
+        margin-bottom:150px;
+    }
+
+
+    #section_2 .section_block .page_title{
+        margin-bottom:150px;
+    }
+
+
+    #section_2 .edgeblock{
+        height: 850px;
+        left: -470px;
+        position: relative;
+        top: -200px;
+    }
+
+    #section_1 .page_title span, .page_title {
+        font-size: 55px;
+    }
+
+    #section_2 .page_title span, .page_title {
+        font-size: 55px;
+    }
+	
+	
+	#section_3 .section_block{
+		margin: 120px 0 90px 0;
+    }
+	
+	
+	
+	#section_3 .section_block .visible-desktop{
+     margin-left: 40px;
+     width: 1100px;
+}
+
+
+
+
+
+	#section_3 .section_block .note_table{
+		margin-left:10px;
+		padding-left:10px;
+    }
+	
+	
+	
+}
+
+
+
+
+
+
+
+/* 一般pc小螢幕 */
+@Media (min-width: 980px) and (max-width: 1199px) { 
+    .row-fluid div.imgLeft{
+        float: left;
+        width: 55%;
+    }
+    .row-fluid div.wordRight{
+        float: right;
+        width: 30%;
+    }
+
+
+    #section_1 .section_block{
+        text-align: center;
+		margin-top:120px;
+		margin-bottom:0px;
+    }
+
+    #section_1 .edgeblock{
+        height: 850px;
+        left: -470px;
+        position: relative;
+        top: -200px;
+    }
+
+    #section_2 .section_block{
+        text-align: center;
+		margin-top:130px;
+        margin-bottom:200px;
+    }
+
+    #section_2 .edgeblock{
+        height: 850px;
+        left: -470px;
+        position: relative;
+        top: -200px;
+    }
+
+    #section_1 .page_title span, .page_title {
+        font-size: 55px;
+    }
+
+    #section_2 .page_title span, .page_title {
+        font-size: 55px;
+    }
+
+
+    /* 圖片 VM1600_edge 分解圖動態 */
+    #section_1 .row-fluid div.imgEdge{
+
+        -webkit-transform:scale(0.9);	
+        -moz-transform:scale(0.9);
+        transform:scale(0.9);
+
+        left:-95px; top:-50px;
+    }
+
+
+    /* 圖片 Card_edge 分解圖動態 */
+    #section_2 .row-fluid div.imgEdge{
+
+        -webkit-transform:scale(0.9);	
+        -moz-transform:scale(0.9);
+        transform:scale(0.9);
+
+        left:-95px; top:60px;
+    }
+	
+	
+	
+	
+	#section_3 .section_block{
+   
+		margin-top:120px;
+        margin-bottom:130px;
+    }
+	
+	
+	
+	#section_3 .section_block .visible-desktop{
+    margin-left: 20px;
+    }
+	
+	
+	#section_3 .section_block .note_table .span10{
+		width:800px;
+
+    }
+	
+
+
+
+}
+
+
+
+
+
+
+
+/* 平板電腦、橫向手機和一般桌機解析度 */
+@Media (min-width: 768px) and (max-width: 979px) { 
+    .row-fluid div.imgLeft{
+        float: left;
+        width:100%;
+    }
+
+
+
+    .row-fluid div.wordRight{
+        float: right;
+        width:100%;
+        margin-bottom:50px;
+    }
+
+
+
+    .features_banner_top { margin-top:0px;}
+
+
+
+    #section_1 .edgeblock{
+        height: 600px;
+        left: -410px;
+        position: relative;
+        top: -200px;
+        transform: scale(0.67);
+    }
+
+    #section_1 .section_block{
+        text-align: center;
+		margin-top:80px;
+        margin-bottom:0px;
+    }
+
+    #section_1 .page_title span, .page_title {
+        font-size: 55px;
+    }
+
+    #section_2 .page_title span, .page_title {
+        font-size: 55px;
+    }
+
+    #section_2 .edgeblock{
+        height: 600px;
+        left: -410px;
+        position: relative;
+        top: -200px;
+        transform: scale(0.67);
+    }
+
+    #section_2 .section_block{
+        text-align: center;
+		margin-top: 120px;
+		margin-bottom: 160px;
+    }
+
+    /* 圖片 VM1600_edge 分解圖動態 */
+    #section_1 .row-fluid div.imgEdge{
+
+        -webkit-transform:scale(0.9);	
+        -moz-transform:scale(0.9);
+        transform:scale(0.9);
+
+        left:-35px; top:-50px;
+    }
+
+
+    /* 圖片 Card_edge 分解圖動態 */
+    #section_2 .row-fluid div.imgEdge{
+
+        -webkit-transform:scale(0.9);	
+        -moz-transform:scale(0.9);
+        transform:scale(0.9);
+
+        left:-35px; top:25px;
+    }
+	
+	
+	
+	#section_3 .section_block .visible-desktop{
+    margin-left: 0px;
+    }
+	
+	
+	#section_3 .section_block .hidden-desktop{
+    width: 760px;
+    }
+	
+	
+}
+
+
+
+
+/* 橫向智慧手機到竪立平板電腦解析度 */
+@Media (max-width: 767px) { 
+    .row-fluid div.imgLeft{
+        float: left;
+        width:100%;
+    }
+    .row-fluid div.wordRight{
+        float: right;
+        width:100%;
+        margin-bottom:40px;
+    }
+
+
+    .features_banner_top { margin-top:0px;}
+
+    #section_1 .edgeblock{
+        height: 500px;
+        left: -310px;
+        position: relative;
+        top: -200px;
+        transform: scale(0.47);
+    }
+
+    #section_1 .section_block{
+        text-align: center;
+		margin-top: 60px;
+		margin-bottom: 0px;
+    }
+
+    #section_1 .page_title span, .page_title {
+        font-size: 30px;
+        line-height: 30px;
+
+    }
+
+    #section_2 .edgeblock{
+        height: 500px;
+        left: -310px;
+        position: relative;
+        top: -200px;
+        transform: scale(0.47);
+    }
+
+    #section_2 .section_block{
+        text-align: center;
+		margin-top: 80px;
+		margin-bottom: 130px;
+    }
+
+    #section_2 .page_title span, .page_title {
+        font-size: 30px;
+        line-height: 30px;
+
+    }
+
+    /* 圖片 VM1600_edge 分解圖動態 */
+    #section_1 .row-fluid div.imgEdge{
+
+        -webkit-transform:scale(0.9);	
+        -moz-transform:scale(0.9);
+        transform:scale(0.9);
+
+        left:-30px; top:-60px;
+    }
+
+
+    /* 圖片 Card_edge 分解圖動態 */
+    #section_2 .row-fluid div.imgEdge{
+
+        -webkit-transform:scale(0.9);	
+        -moz-transform:scale(0.9);
+        transform:scale(0.9);
+
+
+        left:-30px; top:40px;
+    }
+	
+	
+	
+		#section_3 .section_block{
+		margin: 100px 0 120px 0;
+    }
+	
+	
+	#section_3 .section_block .tablePhone_col_3{
+	
+	 transform: scale(0.99);
+     -webkit-transform:scale(0.99);	
+     -moz-transform:scale(0.99);
+    }
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+/* iPhone 6 & 6 plus > 4.7吋--手機及其他更小解析度 */
+@Media (min-width: 373px) and (max-width: 414px) { 
+
+
+
+
+}
+
+
+
+
+
+/* 橫向智慧手機及其他更小解析度 */
+@Media (max-width: 480px) { 
+    .row-fluid div.imgLeft{
+        float: left;
+        width:100%;
+    }
+
+    .row-fluid div.wordRight{
+        float: right;
+        width:100%;
+        margin-bottom:10px;
+    }
+
+    #section_1 .section_block{
+        text-align: center;
+		margin-top:30px;
+		margin-bottom:10px;
+    }
+
+    #section_1 .edgeblock{
+        height: 300px;
+        left: -205px;
+        position: relative;
+        top: -120px;
+        transform: scale(0.25);
+    }
+
+    #section_1 .page_title span, .page_title {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    #section_2 .section_block{
+        text-align: center;
+		margin-top:40px;
+		margin-bottom:110px;
+    }
+
+    #section_2 .edgeblock{
+        height: 300px;
+        left: -205px;
+        position: relative;
+        top: -120px;
+        transform: scale(0.25);
+    }
+
+    #section_2 .page_title span, .page_title {
+        font-size: 25px;
+        line-height: 28px;
+    }
+
+    /* 圖片 VM1600_edge 分解圖動態 */
+    #section_1 .row-fluid div.imgEdge{
+
+        -webkit-transform:scale(0.8);	
+        -moz-transform:scale(0.8);
+        transform:scale(0.8);
+
+
+        left:-10px; top:-5px;
+    }
+
+
+    /* 圖片 Card_edge 分解圖動態 */
+    #section_2 .row-fluid div.imgEdge{
+
+        -webkit-transform:scale(0.8);	
+        -moz-transform:scale(0.8);
+        transform:scale(0.8);
+
+        left:-10px; top:50px;
+    }
+	
+	
+	#section_3 .section_block{
+		margin: 70px 0 0px 0;
+    }
+	
+	
+	#section_3 .section_block .phone_table{
+		top: -80px;
+    }
+	
+	
+	#section_3 .section_block .phone_table3{
+		top: -160px;
+    }
+	
+	
+	#section_3 .section_block .note_table{
+	
+	top:-110px;
+    }
+	
+	
+	#section_3 .section_block .tablePhone_col_3{
+	
+        transform: scale(0.65);
+        -webkit-transform:scale(0.65);	
+        -moz-transform:scale(0.65);
+        left: -55px;
+        position: relative;
+        height: 740px;
+    }
+	
+	
+	
+
+}
+

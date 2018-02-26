@@ -1,0 +1,283 @@
+
+	
+
+/* 特殊需求,Microsite 不共用 */	
+    #section_1 .icon li{
+    display:inline;
+    }
+	
+	
+	
+	
+	
+
+
+/* 超級大螢幕 */
+@Media (min-width: 1921px) and (max-width: 2560px) { 
+
+
+	
+	/* 所有 Microsite 的 Features 裡的 Banner 都適用,不分 Section -- 不可刪除 */	
+	div.container .banner_block {
+    height: 675px;
+    }	
+	
+	
+	/* banner 特殊調整--圖文上方多餘空間 -- 不可刪除 */	
+	#section_1 .banner_extrab{
+	height:60px;
+    }
+	
+	
+	/* banner 特殊調整--純圖片位置 */
+	#section_1 div.section_block .features_banner {
+	margin-left:-10%;
+	margin-top:-250px;
+    }
+	
+	/* banner 特殊調整 -- Icon 選項位置 */
+	#section_1 div.section_block .icon {
+	margin-top:-30px;
+    }
+	
+	
+	
+	#section_4 div.section_block{
+	margin: 160px 0 120px 0;
+    }
+	
+		
+	
+	
+
+	
+}
+
+
+
+
+
+
+
+/* 大螢幕 */
+@Media (min-width: 1200px) and (max-width: 1920px) { 
+
+	
+	
+	/* 所有 Microsite 的 Features 裡的 Banner 都適用,不分 Section -- 不可刪除 */	
+	div.container .banner_block {
+        height: 540px;
+    }	
+	
+	
+	/* banner 特殊調整--圖文上方多餘空間 -- 不可刪除 */	
+	#section_1 .banner_extrab{
+	height:0px;
+    }
+	
+	
+	/* banner 特殊調整--純圖片位置 */
+	#section_1 div.section_block .features_banner {
+	margin-left:-10%;
+	margin-top:-250px;
+    }
+	
+	/* banner 特殊調整 -- Icon 選項位置 */
+	#section_1 div.section_block .icon {
+	margin-top:-100px;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/* 一般pc小螢幕 */
+@Media (min-width: 980px) and (max-width: 1199px) { 
+
+
+
+	/* 所有 Microsite 的 Features 裡的 Banner 都適用,不分 Section -- 不可刪除 */	
+	div.container .banner_block {
+        height: 540px;
+		margin-top:70px;
+    }	
+	
+	
+	/* banner 特殊調整--圖文上方多餘空間 -- 不可刪除 */	
+	#section_1 .banner_extrab{
+	height:0px;
+    }
+	
+	
+	/* banner 特殊調整--純圖片位置 */
+	#section_1 div.section_block .features_banner {
+	margin-left:-20%;
+	margin-top:-250px;
+    }
+	
+	
+	/* banner 特殊調整--純圖片大小 */
+     #section_1 div.section_block .banner_size {
+    -webkit-transform:scale(0.9);	
+    -moz-transform:scale(0.9);
+    transform:scale(0.9);
+    }
+	
+	
+	/* banner 特殊調整 -- Icon 選項位置 */
+	#section_1 div.section_block .icon {
+	margin-top:-100px;
+    }
+	
+	
+/* 客製化圖形位置 -- 僅在此專案使用,非共用 */
+	#section_3 div.imgRight{
+		margin-top:8%;
+		width:55%;
+
+    }
+
+
+}
+
+
+
+
+
+/* 平板電腦、橫向手機和一般桌機解析度 */
+@Media (min-width: 768px) and (max-width: 979px) { 
+	
+	/* banner 特殊調整--純圖片位置 */
+	#section_1 div.section_block .features_banner {
+	margin-left:-35%;
+	margin-top:-150px;
+    }
+	
+	
+		/* banner 特殊調整--純圖片大小 */
+     #section_1 div.section_block .banner_size {
+    -webkit-transform:scale(0.9);	
+    -moz-transform:scale(0.9);
+    transform:scale(0.9);
+    }
+	
+	
+	
+	/* banner 特殊調整--圖文下方多餘空間*/	
+	#section_1 div.section_block{
+		margin-bottom:40px;
+	}
+	
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* 橫向智慧手機到竪立平板電腦解析度 */
+@Media (max-width: 767px) { 
+	
+
+	/* banner 特殊調整--純圖片位置 */
+	#section_1 div.section_block .features_banner {
+	margin-left:-40%;
+	margin-top:150px;
+    }
+	
+	
+	
+	/* banner 特殊調整--純圖片大小 */
+     #section_1 div.section_block .banner_size {
+    -webkit-transform:scale(0.8);	
+    -moz-transform:scale(0.8);
+    transform:scale(0.8);
+    }
+	
+	
+	/* banner 特殊調整--圖文下方多餘空間*/	
+	#section_1 div.section_block{
+		margin-bottom:-85px;
+	}
+	
+ 
+}
+
+
+
+
+
+
+
+
+
+
+/* iPhone 6 & 6 plus > 4.7吋--手機及其他更小解析度 */
+@Media (min-width: 373px) and (max-width: 414px) { 
+
+
+	
+	
+/* 只套用在 "Features" 頁面,包含 Section2 以後的內容, 
+   因為使用 Wordscale 去 transform 縮小文字,所以本來該撐滿的文字區塊多了文字縮後的空白空間,
+   以至於上方空間太高,此為針對 "文字" 到 "Section" 頂端的特殊調整 */
+   #section_2 div.section_block, #section_3 div.section_block, #section_4 div.section_block, #section_5 div.section_block, #section_6 div.section_block, #section_7 div.section_block {
+        margin-top:30px;
+}
+
+
+
+	#section_1 div.section_block .page_title_bigs2 span, .page_title_bigs2 {
+    font-size:42px;
+    line-height:52px;
+}
+	
+
+}
+
+
+
+
+
+
+
+
+
+/* 橫向智慧手機及其他更小解析度 */
+@Media (max-width: 480px) { 
+	
+
+
+
+/* 只套用在 "Features" 頁面,包含 Section2 以後的內容, 
+   因為使用 Wordscale 去 transform 縮小文字,所以本來該撐滿的文字區塊多了文字縮後的空白空間,
+   以至於上方空間太高,此為針對 "文字" 到 "Section" 頂端的特殊調整 */
+   #section_2 div.section_block, #section_3 div.section_block, #section_4 div.section_block, #section_5 div.section_block, #section_6 div.section_block, #section_7 div.section_block {
+        margin-top:30px;
+}
+
+
+	#section_1 div.section_block .page_title_bigs2 span, .page_title_bigs2 {
+    font-size:42px;
+    line-height:52px;
+}
+
+
+
+}
+
